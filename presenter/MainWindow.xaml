@@ -5,32 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:presenter"
         mc:Ignorable="d"
-        Title="Presenter" Height="1080" Width="1920">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="64" />
-            <RowDefinition Height="243.04"/>
-            <RowDefinition Height="143"/>
-            <RowDefinition Height="369"/>
-            <RowDefinition Height="44.96"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="64"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="64"/>
-            <ColumnDefinition Width="120"/>
-            <ColumnDefinition Width="120"/>
-            <ColumnDefinition Width="120"/>
-            <ColumnDefinition Width="120"/>
-            <ColumnDefinition Width="800"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="64"/>
-        </Grid.ColumnDefinitions>
-        <Label Grid.Row="5" Grid.Column="1" Content="Player1" HorizontalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="2" Content="Player2" HorizontalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="3" Content="Player3" HorizontalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="4" Content="Player4" HorizontalAlignment="Center"/>
-        <Canvas x:Name="canvas" Grid.Row="1" Grid.Column="5" Grid.RowSpan="3" Background="Black" Width="800" Height="800" />
-        <Rectangle Grid.Column="1" HorizontalAlignment="Center" Height="349" Grid.Row="3" Stroke="Black" VerticalAlignment="Center" Width="100"/>
-    </Grid>
+        Title="Presenter" Height="1080" Width="1920"
+        WindowState="Maximized">
+    <Viewbox>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="64" />
+                <RowDefinition Height="243.04"/>
+                <RowDefinition Height="143"/>
+                <RowDefinition Height="369"/>
+                <RowDefinition Height="44.96"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="64"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="800"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="64"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="5" Grid.Column="1" Content="Player1" HorizontalAlignment="Center"/>
+            <Label Grid.Row="5" Grid.Column="2" Content="Player2" HorizontalAlignment="Center"/>
+            <Label Grid.Row="5" Grid.Column="3" Content="Player3" HorizontalAlignment="Center"/>
+            <Label Grid.Row="5" Grid.Column="4" Content="Player4" HorizontalAlignment="Center"/>
+            <Canvas x:Name="canvas" Grid.Row="1" Grid.Column="5" Grid.RowSpan="3" Background="Black" Width="800" Height="800" />
+            <Rectangle Grid.Column="1" HorizontalAlignment="Center" Height="349" Grid.Row="3" Stroke="Black" VerticalAlignment="Center" Width="100"/>
+        </Grid>
+    </Viewbox>
 </Window>
